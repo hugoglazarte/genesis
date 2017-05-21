@@ -35,7 +35,7 @@ remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 add_action( 'genesis_entry_content', 'rtug_before_entry_content', 25 );
 
 function rtug_before_entry_content() {
-	echo '<p><strong>An extra line of text before the entry content</strong></p>';
+	// echo '<p><strong>An extra line of text before the entry content</strong></p>';
 }
 
 
@@ -43,23 +43,28 @@ add_action( 'genesis_after_content_sidebar_wrap', 'rtug_before_entry_footer', 0 
 
 function rtug_before_entry_footer() {
 
-	echo '<p><strong>An extra line of text before the entry FOOTER</strong></p>';
+	// echo '<p><strong>An extra line of text before the entry FOOTER</strong></p>';
 
 	genesis_widget_area( 'home-featured', array(
 	// 'before'	=> '<div class="home-featured widget-area">',
 	// 'after'		=> '</div>',
-	'before'	=> '<div class="content novedades" id="genesis-content home-featured">',
+	'before'	=> '<div class="site-inner"><div class="content novedades" id="genesis-content home-featured">',
 	'after'		=> '</div>',
 	));
 
+	// genesis_widget_area( 'home-middle', array(
+	// 'before'	=> '<div class="home-featured widget-enlaces widget-area">',
+	// 'after'		=> '</div>',
+	// ));
+
 	genesis_widget_area( 'home-middle', array(
-	'before'	=> '<div class="home-featured widget-enlaces widget-area">',
-	'after'		=> '</div>',
+	'before'	=> '<aside class="content-sidebar-wrap enlaces" id="">',
+	'after'		=> '</aside></div>',
 	));
 
 	genesis_widget_area( 'home-featured-posts', array(
-		'before' => '<div class="home-featured-posts widget-area"><div class="wrap">',
-		'after' => '</div></div>',
+		'before' => '<div class="home-featured-posts widget-area">',
+		'after' => '</div>',
 	) );
 }
 

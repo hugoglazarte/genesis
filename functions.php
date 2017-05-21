@@ -171,7 +171,7 @@ add_action( 'genesis_before', 'sp_before_topbar_widget' );
 	function sp_before_topbar_widget() {
 
 		genesis_widget_area( 'topbar-info', array(
-			'before' => '<div class="wrap"><div class="social-area widget-area">',
+			'before' => '<div class="topbar-info full-width"><div class="wrap"><div class="social-area widget-area">',
 			'after' => '</div>',
 	) );
 
@@ -182,7 +182,7 @@ add_action( 'genesis_before', 'add_third_nav_genesis' );
 function add_third_nav_genesis() {
 echo'<div class="nav-top-nuevo">';
 wp_nav_menu( array( 'theme_location' => 'third-menu', 'container_class' => 'genesis-nav-menu' ) );
-echo'</div></div>';
+echo'</div></div></div>';
 }
 
 

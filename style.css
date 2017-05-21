@@ -816,7 +816,8 @@ th:first-child {
 
 .entry-title a,
 .sidebar .widget-title a {
-	color: #333;
+	color: #a3d0e2;
+	font-weight: bold;
 	text-decoration: none;
 }
 
@@ -826,8 +827,10 @@ th:first-child {
 }
 
 .widget-title {
+	color: #4489ad;
 	font-size: 18px;
 	font-size: 2rem;
+	font-weight: bold;
 	margin-bottom: 50px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #e3e3e3;
@@ -1142,9 +1145,11 @@ img.alignright,
 }
 
 .genesis-nav-menu a {
-	color: #333;
+	color: #fff;
 	display: block;
+	font-weight: bold;
 	padding: 32px 20px;
+	text-transform: uppercase;
 	text-decoration: none;
 }
 
@@ -1153,8 +1158,8 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover  {
-	color: #c3251d;
-	text-decoration: underline;
+	color: #fff;
+	/*text-decoration: underline;*/
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1980,13 +1985,14 @@ p.entry-meta {
 	width: 60% !important;
   	float: left;
   	background-color: #fff;
-  	padding: 70px 40px;
+  	padding: 0px 20px;
 }
 
-.widget-enlaces {
+.enlaces {
 	/*width: 40% !important;*/
 	background-color: #fff;
-  	padding: 70px 40px;
+  	padding: 0px 20px;
+  	display: block;
 
 }
 
@@ -2003,4 +2009,17 @@ p.entry-meta {
 
 h4.titulo-comision{
 	text-align: center;
+}
+
+.topbar-info{
+	background-color: #a3d0e2;
+}
+
+.nav-primary{
+	background-color: #4489ad !important;
+}
+
+h6.enlace-tmp {
+	color:#a3d0e2;
+	font-weight: bold;
 }
