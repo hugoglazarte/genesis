@@ -14,8 +14,8 @@ get_header();
 
 
 genesis_widget_area( 'home-slider', array(
-	'before'	=> '<div class="content-sidebar-wrap">',
-	'after'		=> '',
+	'before'	=> '<div class="site-inner"><div class="home-slider widget-area">',
+	'after'		=> '</div></div>',
 ));
 
 
@@ -48,7 +48,7 @@ function rtug_before_entry_footer() {
 	genesis_widget_area( 'home-featured', array(
 	// 'before'	=> '<div class="home-featured widget-area">',
 	// 'after'		=> '</div>',
-	'before'	=> '<div class="content"><div class="novedades" id="">',
+	'before'	=> '<div class="site-inner"><div class="content novedades" id="genesis-content home-featured">',
 	'after'		=> '</div>',
 	));
 
@@ -58,12 +58,12 @@ function rtug_before_entry_footer() {
 	// ));
 
 	genesis_widget_area( 'home-middle', array(
-	'before'	=> '<div class="enlaces" id="">',
-	'after'		=> '</div></div>',
+	'before'	=> '<aside class="content-sidebar-wrap enlaces" id="">',
+	'after'		=> '</aside></div>',
 	));
 
 	genesis_widget_area( 'home-featured-posts', array(
-		'before' => '<div class="content home-featured-posts">',
+		'before' => '<div class="home-featured-posts widget-area">',
 		'after' => '</div>',
 	) );
 }
@@ -75,7 +75,7 @@ function rtug_before_entry_footer() {
 
 
 genesis_widget_area( 'home-bottom', array(
-		'before' => '<div id="blabla">',
+		'before' => '<div class="home-featured-posts widget-area"><div class="wrap">',
 		'after' => '</div></div>',
 ) );
 add_filter( 'body_class', 'bw_home_body_class' );

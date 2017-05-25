@@ -218,3 +218,13 @@ genesis_register_sidebar( array(
 'name' => __( 'Home Bottom', 'news' ),
 'description' => __( 'This is the home bottom section.', 'news' ),
 ) );
+
+
+//* Add support for custom header
+add_theme_support( 'custom-header', array(
+	'width'           => 287,
+	'height'          => 68,
+	'header-selector' => '.site-title a',
+	'header-text'     => false,
+	'flex-height'     => true,
+) );
